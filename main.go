@@ -17,6 +17,8 @@ func eventHandler(evt interface{}) {
 	switch v := evt.(type) {
 	case *events.Message:
 		fmt.Println("Received a message!", v.Message.GetConversation())
+		fmt.Println("Received a message!", v.Message)
+		fmt.Println("Received a message!", v.Info)
 	}
 }
 
