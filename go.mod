@@ -2,7 +2,10 @@ module github.com/aiteung/wa
 
 go 1.20
 
-require go.mau.fi/whatsmeow v0.0.0-20230718190209-efef6f1cec8e
+require (
+	github.com/mattn/go-sqlite3 v1.14.17
+	go.mau.fi/whatsmeow v0.0.0-20230718190209-efef6f1cec8e
+)
 
 require (
 	filippo.io/edwards25519 v1.0.0 // indirect
